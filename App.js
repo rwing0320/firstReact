@@ -18,7 +18,7 @@ export default function App() {
       {/* <Text style={styles.instructions}>To get started, edit App.js</Text>
       <Text style={styles.instructions}>{instructions}</Text> */}
 
-      <GreetingCall></GreetingCall>
+      <GreetingCall style={styles.container}></GreetingCall>
 
 
       {/* <Greeting name="Ryan"></Greeting>
