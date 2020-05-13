@@ -1,15 +1,12 @@
 import * as React from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import GreetingCall from './components/GrettingCall';
-import Greeting from './components/Greeting';
 
 const instructions = Platform.select({
   ios: `Press Cmd+R to reload,\nCmd+D or shake for dev menu`,
   android: `Double tap R on your keyboard to reload,\nShake or press menu button for dev menu`,
 });
 
-
- var names = ['ryan', 'aishah', 'harry']
 
 export default function App() {
   return (
