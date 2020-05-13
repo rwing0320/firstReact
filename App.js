@@ -6,12 +6,30 @@ const instructions = Platform.select({
   android: `Double tap R on your keyboard to reload,\nShake or press menu button for dev menu`,
 });
 
+let myMap = new Map();
+
+const cars = {
+    name: "",
+    color: ""
+}
+
+function addToMap(){
+  var newcar = new cars();
+  newcar.name = "volvo";
+  newcar.color = "red";
+
+  myMap.addToMap(newcar);
+
+}
+
 export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>Welcome to React Native!</Text>
       <Text style={styles.instructions}>To get started, edit App.js</Text>
       <Text style={styles.instructions}>{instructions}</Text>
+
+      
     </View>
   );
 }
