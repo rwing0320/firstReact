@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import GreetingCall from './components/GrettingCall';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const instructions = Platform.select({
   ios: `Press Cmd+R to reload,\nCmd+D or shake for dev menu`,
@@ -10,19 +11,19 @@ const instructions = Platform.select({
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scroll}>
       <Text style={styles.welcome}>Welcome to React Native!</Text>
-      {/* <Text style={styles.instructions}>To get started, edit App.js</Text>
-      <Text style={styles.instructions}>{instructions}</Text> */}
 
-      <GreetingCall style={styles.container}></GreetingCall>
+      <GreetingCall ></GreetingCall>
 
 
       {/* <Greeting name="Ryan"></Greeting>
       <Greeting name="Aishah"></Greeting>
       <Greeting name="Harry"></Greeting> */}
 
-    </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
@@ -43,4 +44,7 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  scroll:{
+    marginTop: 55
+  }
 });

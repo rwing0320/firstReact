@@ -9,7 +9,7 @@ import { StyleSheet, Text, View} from 'react-native';
 
 export default function Greeting(props) {
   return (
-   <View style={styles.container}>
+   <View>
        <Text>Hello {props.name}</Text>
    </View>
   );
