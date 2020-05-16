@@ -1,34 +1,22 @@
 import * as React from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
+import AutoComplete from './components/AutoComplete';
+import './src/App.css'
 
 const instructions = Platform.select({
   ios: `Press Cmd+R to reload,\nCmd+D or shake for dev menu`,
   android: `Double tap R on your keyboard to reload,\nShake or press menu button for dev menu`,
 });
 
-let myMap = new Map();
 
-const cars = {
-    name: "",
-    color: ""
-}
-
-function addToMap(){
-  var newcar = new cars();
-  newcar.name = "volvo";
-  newcar.color = "red";
-
-  myMap.addToMap(newcar);
-
-}
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Welcome to React Native!</Text>
+      {/* <Text style={styles.welcome}>Welcome to React Native!</Text>
       <Text style={styles.instructions}>To get started, edit App.js</Text>
-      <Text style={styles.instructions}>{instructions}</Text>
-
+      <Text style={styles.instructions}>{instructions}</Text> */}
+      <AutoComplete></AutoComplete>
       
     </View>
   );
