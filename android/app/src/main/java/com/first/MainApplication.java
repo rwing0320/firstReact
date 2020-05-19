@@ -6,6 +6,8 @@ import android.net.Uri;
 
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.calendarevents.CalendarEventsPackage;
+import pro.equinoxstudio.react_native_alarm_clock.RNAlarmClockPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;

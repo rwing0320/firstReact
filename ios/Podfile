@@ -43,4 +43,6 @@ target 'First' do
 
   # react-native-cli autolinking
   use_native_modules!
+  pod 'react-native-calendar-events', :path => '../node_modules/react-native-calendar-events'
+
 end
